@@ -74,7 +74,8 @@ int main()
 	printList(head);
 
 	printf("Print middle node \n");
-	printList_middle(head);
+	int total_node;
+	printList_middle(head, total_node);
 
 	return 0;
 }

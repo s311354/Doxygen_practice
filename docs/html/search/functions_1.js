@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main',['main',['../main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.c']]]
+  ['clearbit',['clearbit',['../bitwise_8c.html#abe18a20fb452d3de7f97b5596ed9f544',1,'clearbit(int input, int bitwise):&#160;bitwise.c'],['../bitwise_8h.html#abe18a20fb452d3de7f97b5596ed9f544',1,'clearbit(int input, int bitwise):&#160;bitwise.c']]]
 ];

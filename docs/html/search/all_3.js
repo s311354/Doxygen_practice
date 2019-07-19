@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['next',['next',['../struct_node___t.html#a2e6ec350ad2aaf45244d52d0834ea8da',1,'Node_T::next()'],['../struct_du___node___t.html#a63e64fc1e62e071703cf05298b29d0ed',1,'Du_Node_T::next()']]],
-  ['node',['Node',['../linked__list_8h.html#a64de9a64917fa026675e50bc0436d71f',1,'linked_list.h']]],
-  ['node_5ft',['Node_T',['../struct_node___t.html',1,'']]]
+  ['data',['data',['../struct_node___t.html#a0c5ea3488b3bbcfdc8a8cf143afe76f7',1,'Node_T::data()'],['../struct_du___node___t.html#a4fd8bcb55e30dfc9c86102ac13b0132e',1,'Du_Node_T::data()']]],
+  ['definition_2eh',['definition.h',['../definition_8h.html',1,'']]],
+  ['different_5farithmetic',['different_arithmetic',['../recurse_8c.html#a7d65a64eebc4df75d801933c29b7a507',1,'different_arithmetic(int factor):&#160;recurse.c'],['../recurse_8h.html#a7d65a64eebc4df75d801933c29b7a507',1,'different_arithmetic(int factor):&#160;recurse.c']]],
+  ['du_5fnode',['Du_Node',['../linked__list_8h.html#aa8c6ff038858c4d700e40a81ea9a779c',1,'linked_list.h']]],
+  ['du_5fnode_5ft',['Du_Node_T',['../struct_du___node___t.html',1,'']]],
+  ['doxygen_5fpractice',['Doxygen_practice',['../md__r_e_a_d_m_e.html',1,'']]]
 ];

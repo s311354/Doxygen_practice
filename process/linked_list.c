@@ -33,8 +33,10 @@ void printList(P_Node head)
 *    @param Starting node.
 *    @return none
 */
-void printList_middle(P_Node head_ref)
+void printList_middle(P_Node head_ref, int total_node)
 {
+	int sum_node = 1;
+
 	P_Node p_fast_node = head_ref;
 	P_Node p_slow_node = head_ref;
 
@@ -43,9 +45,13 @@ void printList_middle(P_Node head_ref)
 			p_fast_node = (P_Node) p_fast_node->next;
 			p_fast_node = (P_Node) p_fast_node->next;
 			p_slow_node = (P_Node) p_slow_node->next;
+			sum_node += 2;
 		}
 		printf("The meddle elements is: %d \n", p_slow_node->data);
 	}
+
+	total_node = sum_node;
+	printf("Total of nodes: %d", total_node);
 
 }
 
@@ -64,13 +70,13 @@ void linked_list_push_node(P_Node* head_ref, int data)
 }
 
 /** This function is reversing the linked list...
-*    Reverse function (Input: 1->2->3->4->NULL; Output: 4->3->2->1->NULL)
+*    Reverse function (Input: 1->2->3->4->NULL; Output: NULL<-1<-2<-3<-4)
 *
 * 	 1. Initialize three pointers: prev (NULL), curr (head),  next (NULL).
 * 	 2. Iterate trough the linked list.
-*
 * 	 - next = curr->next // store next node
 * 	 - curr->next = prev // actual reserving happens
+*
 * 	 3. One step forward
 * 	 - prev = curr
 * 	 - curr = next
