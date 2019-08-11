@@ -6,5 +6,4 @@ int clearbit(int input, int bitwise);
 int inversebit(int input, int bitwise);
 void swap(int data_a, int data_b);
 
-
 #endif /* INCLUDE_BITWISE_H_ */

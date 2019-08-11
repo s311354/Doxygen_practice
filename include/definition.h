@@ -1,4 +1,3 @@
-
 #ifndef INCLUDE_DEFINITION_H_
 #define INCLUDE_DEFINITION_H_
 
