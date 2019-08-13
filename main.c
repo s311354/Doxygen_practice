@@ -8,9 +8,9 @@
 // Basic linked list
 /* We have the linked list ready.
 
-+---+---+     +---+---+     +----+------+
-| 1 | o----->| 2 | o-----> | 3 | NULL |
-+---+---+     +---+---+     +----+------+
+ +---+---+     +---+---+     +----+------+
+ | 1 | o----->| 2 | o-----> | 3 | NULL |
+ +---+---+     +---+---+     +----+------+
 
  */
 int main() {
@@ -39,7 +39,6 @@ int main() {
 	P_Node second_branch = init_Node(2);
 	P_Node third_branch = init_Node(2);
 	P_Node four_branch = init_Node(4);
-
 
 	// Link the structure
 	head->next = (struct Node *) second;
@@ -76,8 +75,6 @@ int main() {
 
 	printf("Print the intersection point of two linked list: \n");
 	linked_list_get_Intersection_top(head, head_branch);
-
-
 
 	// Create a loop in linked list
 	third->next = (struct Node *) four;
