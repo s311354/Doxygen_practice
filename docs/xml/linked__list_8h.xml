@@ -1,0 +1,465 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="linked__list_8h" kind="file" language="C++">
+    <compoundname>linked_list.h</compoundname>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <includedby refid="linked__list_8c" local="yes">process/linked_list.c</includedby>
+    <invincdepgraph>
+      <node id="7">
+        <label>include/linked_list.h</label>
+        <link refid="linked__list_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="9">
+        <label>process/linked_list.c</label>
+        <link refid="linked__list_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_node___t" prot="public">Node_T</innerclass>
+    <innerclass refid="struct_du___node___t" prot="public">Du_Node_T</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="linked__list_8h_1ac582a3377d7f1e676f9fb60d80b3a33d" prot="public" static="no">
+        <type>struct <ref refid="struct_node___t" kindref="compound">Node_T</ref></type>
+        <definition>typedef struct Node_T  Node</definition>
+        <argsstring></argsstring>
+        <name>Node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dummy Linked list </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/linked_list.h" line="9" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" prot="public" static="no">
+        <type>struct <ref refid="struct_node___t" kindref="compound">Node_T</ref> *</type>
+        <definition>typedef struct Node_T * P_Node</definition>
+        <argsstring></argsstring>
+        <name>P_Node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/linked_list.h" line="9" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="linked__list_8h_1a740b9a8414da06f4145136999679481b" prot="public" static="no">
+        <type>struct <ref refid="struct_du___node___t" kindref="compound">Du_Node_T</ref></type>
+        <definition>typedef struct Du_Node_T  Du_Node</definition>
+        <argsstring></argsstring>
+        <name>Du_Node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dummy Doubly Linked list </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/linked_list.h" line="17" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="linked__list_8h_1af66f295d3af268b06df2a387479879c6" prot="public" static="no">
+        <type>struct <ref refid="struct_du___node___t" kindref="compound">Du_Node_T</ref> *</type>
+        <definition>typedef struct Du_Node_T * P_Du_Node</definition>
+        <argsstring></argsstring>
+        <name>P_Du_Node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/linked_list.h" line="17" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="linked__list_8h_1a5701413d759ae210acce0d0609784a5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref></type>
+        <definition>P_Node init_Node</definition>
+        <argsstring>(int data)</argsstring>
+        <name>init_Node</name>
+        <param>
+          <type>int</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is allocating the dynamic memory to the node... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Pass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer-to-lined-list. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/linked_list.h" line="19" column="1" bodyfile="process/linked_list.c" bodystart="10" bodyend="15"/>
+        <references refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" compoundref="linked__list_8h" startline="7">Node_T::data</references>
+        <references refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" compoundref="linked__list_8h" startline="8">Node_T::next</references>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="16" endline="90">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="linked__list_8h_1acaa7afa48eb97c81c2ca97eff5133d4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int printList_len</definition>
+        <argsstring>(P_Node head)</argsstring>
+        <name>printList_len</name>
+        <param>
+          <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref></type>
+          <declname>head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is printing length of linked list starting from the given node... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Starting</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/linked_list.h" line="20" column="1" bodyfile="process/linked_list.c" bodystart="36" bodyend="49"/>
+        <references refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" compoundref="linked__list_8h" startline="8">Node_T::next</references>
+        <referencedby refid="linked__list_8h_1a2b6268688fd88adebde5032fcce91171" compoundref="linked__list_8c" startline="158" endline="173">linked_list_get_Intersection_top</referencedby>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="16" endline="90">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="linked__list_8h_1a2b6268688fd88adebde5032fcce91171" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linked_list_get_Intersection_top</definition>
+        <argsstring>(P_Node head_ref1, P_Node head_ref2)</argsstring>
+        <name>linked_list_get_Intersection_top</name>
+        <param>
+          <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref></type>
+          <declname>head_ref1</declname>
+        </param>
+        <param>
+          <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref></type>
+          <declname>head_ref2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used to get the intersection point of two linked lists... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>First</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Second</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/linked_list.h" line="21" column="1" bodyfile="process/linked_list.c" bodystart="158" bodyend="173"/>
+        <references refid="linked__list_8c_1acaa7afa48eb97c81c2ca97eff5133d4c" compoundref="linked__list_8c" startline="36" endline="49">printList_len</references>
+        <references refid="linked__list_8c_1a63e1060a2209e519a8dd89c877334437" compoundref="linked__list_8c" startline="180" endline="205">linked_list_get_Intersection</references>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="16" endline="90">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="linked__list_8h_1a63e1060a2209e519a8dd89c877334437" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linked_list_get_Intersection</definition>
+        <argsstring>(int diff_len, P_Node head_ref1, P_Node head_ref2)</argsstring>
+        <name>linked_list_get_Intersection</name>
+        <param>
+          <type>int</type>
+          <declname>diff_len</declname>
+        </param>
+        <param>
+          <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref></type>
+          <declname>head_ref1</declname>
+        </param>
+        <param>
+          <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref></type>
+          <declname>head_ref2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used to traverse two linked lists and fine the node of intersection... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>First</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Second</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The node of intersection </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/linked_list.h" line="22" column="1" bodyfile="process/linked_list.c" bodystart="180" bodyend="205"/>
+        <references refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" compoundref="linked__list_8h" startline="8">Node_T::next</references>
+        <references refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" compoundref="linked__list_8h" startline="7">Node_T::data</references>
+        <referencedby refid="linked__list_8h_1a2b6268688fd88adebde5032fcce91171" compoundref="linked__list_8c" startline="158" endline="173">linked_list_get_Intersection_top</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="linked__list_8h_1abd501d88c93d042f86b64f1813af62b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printList</definition>
+        <argsstring>(P_Node head)</argsstring>
+        <name>printList</name>
+        <param>
+          <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref></type>
+          <declname>head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is printing contents of linked list starting from the given node... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Starting</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/linked_list.h" line="23" column="1" bodyfile="process/linked_list.c" bodystart="21" bodyend="30"/>
+        <references refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" compoundref="linked__list_8h" startline="7">Node_T::data</references>
+        <references refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" compoundref="linked__list_8h" startline="8">Node_T::next</references>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="16" endline="90">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="linked__list_8h_1a45c0c2ed3c68ce0aa806fea6910f2ea7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printList_middle</definition>
+        <argsstring>(P_Node head_ref, int total_node)</argsstring>
+        <name>printList_middle</name>
+        <param>
+          <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref></type>
+          <declname>head_ref</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>total_node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is printing middle of linked list... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Starting</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/linked_list.h" line="24" column="1" bodyfile="process/linked_list.c" bodystart="55" bodyend="74"/>
+        <references refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" compoundref="linked__list_8h" startline="8">Node_T::next</references>
+        <references refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" compoundref="linked__list_8h" startline="7">Node_T::data</references>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="16" endline="90">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="linked__list_8h_1adad6d2501ce74cee94e652408b2ff725" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linked_list_push_node</definition>
+        <argsstring>(P_Node *head_ref, int data)</argsstring>
+        <name>linked_list_push_node</name>
+        <param>
+          <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref> *</type>
+          <declname>head_ref</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is pushing a new node at the front... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Pass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer-to-struct. it can change the memory address stored at that memory location. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Assign</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to a new node. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/linked_list.h" line="25" column="1" bodyfile="process/linked_list.c" bodystart="81" bodyend="87"/>
+        <references refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" compoundref="linked__list_8h" startline="7">Node_T::data</references>
+        <references refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" compoundref="linked__list_8h" startline="8">Node_T::next</references>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="16" endline="90">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="linked__list_8h_1a67814184d4d93c72619d21d8dd0c4cf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linked_list_reverse</definition>
+        <argsstring>(P_Node *head_ref)</argsstring>
+        <name>linked_list_reverse</name>
+        <param>
+          <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref> *</type>
+          <declname>head_ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is reversing the linked list... Reverse function (Input: 1-&gt;2-&gt;3-&gt;4-&gt;NULL; Output: NULL&lt;-1&lt;-2&lt;-3&lt;-4)</para>
+<para><orderedlist>
+<listitem><para>Initialize three pointers: prev (NULL), curr (head), next (NULL).</para>
+</listitem><listitem><para>Iterate trough the linked list.</para>
+</listitem></orderedlist>
+<itemizedlist>
+<listitem><para>next = curr-&gt;next // store next node</para>
+</listitem><listitem><para>curr-&gt;next = prev // actual reserving happens</para>
+</listitem></itemizedlist>
+<orderedlist>
+<listitem><para>One step forward</para>
+</listitem></orderedlist>
+<itemizedlist>
+<listitem><para>prev = curr</para>
+</listitem><listitem><para>curr = next</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Pass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer-to-lined-list. it can change the memory address stored at that memory location. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/linked_list.h" line="26" column="1" bodyfile="process/linked_list.c" bodystart="104" bodyend="123"/>
+        <references refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" compoundref="linked__list_8h" startline="8">Node_T::next</references>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="16" endline="90">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="linked__list_8h_1a5ef0665f940196edd34c9f888a9f2766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linked_list_find_loop</definition>
+        <argsstring>(P_Node head_ref)</argsstring>
+        <name>linked_list_find_loop</name>
+        <param>
+          <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref></type>
+          <declname>head_ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is finding the loop in a the given linked list... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Starting</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/linked_list.h" line="27" column="1" bodyfile="process/linked_list.c" bodystart="129" bodyend="151"/>
+        <references refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" compoundref="linked__list_8h" startline="8">Node_T::next</references>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="16" endline="90">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>INCLUDE_LINKED_LIST_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INCLUDE_LINKED_LIST_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="struct_node___t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_node___t" kindref="compound">Node_T</ref><sp/>{</highlight></codeline>
+<codeline lineno="7" refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="8" refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_node___t" kindref="compound">Node</ref><sp/>*<sp/><ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}<sp/><ref refid="linked__list_8h_1ac582a3377d7f1e676f9fb60d80b3a33d" kindref="member">Node</ref>,<sp/>*<ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="struct_du___node___t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_du___node___t" kindref="compound">Du_Node_T</ref><sp/>{</highlight></codeline>
+<codeline lineno="14" refid="struct_du___node___t_1a4fd8bcb55e30dfc9c86102ac13b0132e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_du___node___t_1a4fd8bcb55e30dfc9c86102ac13b0132e" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="15" refid="struct_du___node___t_1a5fbd38daec8cff3a22beba5b9b282a4c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_node___t" kindref="compound">Node</ref>*<sp/><ref refid="struct_du___node___t_1a5fbd38daec8cff3a22beba5b9b282a4c" kindref="member">prev</ref>;</highlight></codeline>
+<codeline lineno="16" refid="struct_du___node___t_1a63e64fc1e62e071703cf05298b29d0ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_node___t" kindref="compound">Node</ref>*<sp/><ref refid="struct_du___node___t_1a63e64fc1e62e071703cf05298b29d0ed" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}<sp/><ref refid="linked__list_8h_1a740b9a8414da06f4145136999679481b" kindref="member">Du_Node</ref>,<sp/>*<ref refid="linked__list_8h_1af66f295d3af268b06df2a387479879c6" kindref="member">P_Du_Node</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/><ref refid="linked__list_8h_1a5701413d759ae210acce0d0609784a5c" kindref="member">init_Node</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="linked__list_8h_1acaa7afa48eb97c81c2ca97eff5133d4c" kindref="member">printList_len</ref>(<ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>head);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="linked__list_8h_1a2b6268688fd88adebde5032fcce91171" kindref="member">linked_list_get_Intersection_top</ref>(<ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>head_ref1,<sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>head_ref2);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="linked__list_8h_1a63e1060a2209e519a8dd89c877334437" kindref="member">linked_list_get_Intersection</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>diff_len,<sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>head_ref1,<sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>head_ref2);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="linked__list_8h_1abd501d88c93d042f86b64f1813af62b5" kindref="member">printList</ref>(<ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>head);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="linked__list_8h_1a45c0c2ed3c68ce0aa806fea6910f2ea7" kindref="member">printList_middle</ref>(<ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>head_ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>total_node);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="linked__list_8h_1adad6d2501ce74cee94e652408b2ff725" kindref="member">linked_list_push_node</ref>(<ref refid="struct_node___t" kindref="compound">P_Node</ref>*<sp/>head_ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="linked__list_8h_1a67814184d4d93c72619d21d8dd0c4cf5" kindref="member">linked_list_reverse</ref>(<ref refid="struct_node___t" kindref="compound">P_Node</ref>*<sp/>head_ref);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="linked__list_8h_1a5ef0665f940196edd34c9f888a9f2766" kindref="member">linked_list_find_loop</ref>(<ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>head_ref);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDE_LINKED_LIST_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="include/linked_list.h"/>
+  </compounddef>
+</doxygen>

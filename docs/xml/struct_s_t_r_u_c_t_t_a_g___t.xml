@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="struct_s_t_r_u_c_t_t_a_g___t" kind="struct" language="C++" prot="public">
+    <compoundname>STRUCTTAG_T</compoundname>
+    <includes refid="struct__process_8h" local="no">struct_process.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_s_t_r_u_c_t_t_a_g___t_1a7ef6e95bbf5a7ad4cc80f2d600ca28a6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int STRUCTTAG_T::memberA</definition>
+        <argsstring></argsstring>
+        <name>memberA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>struct value 1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/struct_process.h" line="7" column="1" bodyfile="include/struct_process.h" bodystart="7" bodyend="-1"/>
+        <referencedby refid="struct__process_8h_1ac8f153ab8088724127bccf2fda7196a6" compoundref="struct__process_8c" startline="9" endline="14">struct_init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_s_t_r_u_c_t_t_a_g___t_1a443890f81996bc5364684d246523f7f0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int STRUCTTAG_T::memberB</definition>
+        <argsstring></argsstring>
+        <name>memberB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>struct value 1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/struct_process.h" line="8" column="1" bodyfile="include/struct_process.h" bodystart="8" bodyend="-1"/>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="16" endline="90">main</referencedby>
+        <referencedby refid="struct__process_8h_1ac8f153ab8088724127bccf2fda7196a6" compoundref="struct__process_8c" startline="9" endline="14">struct_init</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Dummy structure </para>
+    </detaileddescription>
+    <location file="include/struct_process.h" line="6" column="1" bodyfile="include/struct_process.h" bodystart="6" bodyend="9"/>
+    <listofallmembers>
+      <member refid="struct_s_t_r_u_c_t_t_a_g___t_1a7ef6e95bbf5a7ad4cc80f2d600ca28a6" prot="public" virt="non-virtual"><scope>STRUCTTAG_T</scope><name>memberA</name></member>
+      <member refid="struct_s_t_r_u_c_t_t_a_g___t_1a443890f81996bc5364684d246523f7f0" prot="public" virt="non-virtual"><scope>STRUCTTAG_T</scope><name>memberB</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

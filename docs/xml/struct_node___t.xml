@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="struct_node___t" kind="struct" language="C++" prot="public">
+    <compoundname>Node_T</compoundname>
+    <includes refid="linked__list_8h" local="no">linked_list.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Node_T::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/linked_list.h" line="7" column="1" bodyfile="include/linked_list.h" bodystart="7" bodyend="-1"/>
+        <referencedby refid="linked__list_8h_1a5701413d759ae210acce0d0609784a5c" compoundref="linked__list_8c" startline="10" endline="15">init_Node</referencedby>
+        <referencedby refid="linked__list_8h_1a63e1060a2209e519a8dd89c877334437" compoundref="linked__list_8c" startline="180" endline="205">linked_list_get_Intersection</referencedby>
+        <referencedby refid="linked__list_8h_1adad6d2501ce74cee94e652408b2ff725" compoundref="linked__list_8c" startline="81" endline="87">linked_list_push_node</referencedby>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="16" endline="90">main</referencedby>
+        <referencedby refid="linked__list_8h_1abd501d88c93d042f86b64f1813af62b5" compoundref="linked__list_8c" startline="21" endline="30">printList</referencedby>
+        <referencedby refid="linked__list_8h_1a45c0c2ed3c68ce0aa806fea6910f2ea7" compoundref="linked__list_8c" startline="55" endline="74">printList_middle</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="linked__list_8h_1ac582a3377d7f1e676f9fb60d80b3a33d" kindref="member">Node</ref> *</type>
+        <definition>struct Node* Node_T::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/linked_list.h" line="8" column="1" bodyfile="include/linked_list.h" bodystart="8" bodyend="-1"/>
+        <referencedby refid="linked__list_8h_1a5701413d759ae210acce0d0609784a5c" compoundref="linked__list_8c" startline="10" endline="15">init_Node</referencedby>
+        <referencedby refid="linked__list_8h_1a5ef0665f940196edd34c9f888a9f2766" compoundref="linked__list_8c" startline="129" endline="151">linked_list_find_loop</referencedby>
+        <referencedby refid="linked__list_8h_1a63e1060a2209e519a8dd89c877334437" compoundref="linked__list_8c" startline="180" endline="205">linked_list_get_Intersection</referencedby>
+        <referencedby refid="linked__list_8h_1adad6d2501ce74cee94e652408b2ff725" compoundref="linked__list_8c" startline="81" endline="87">linked_list_push_node</referencedby>
+        <referencedby refid="linked__list_8h_1a67814184d4d93c72619d21d8dd0c4cf5" compoundref="linked__list_8c" startline="104" endline="123">linked_list_reverse</referencedby>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="16" endline="90">main</referencedby>
+        <referencedby refid="linked__list_8h_1abd501d88c93d042f86b64f1813af62b5" compoundref="linked__list_8c" startline="21" endline="30">printList</referencedby>
+        <referencedby refid="linked__list_8h_1acaa7afa48eb97c81c2ca97eff5133d4c" compoundref="linked__list_8c" startline="36" endline="49">printList_len</referencedby>
+        <referencedby refid="linked__list_8h_1a45c0c2ed3c68ce0aa806fea6910f2ea7" compoundref="linked__list_8c" startline="55" endline="74">printList_middle</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Dummy Linked list </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>Node_T</label>
+        <link refid="struct_node___t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/linked_list.h" line="6" column="1" bodyfile="include/linked_list.h" bodystart="6" bodyend="9"/>
+    <listofallmembers>
+      <member refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" prot="public" virt="non-virtual"><scope>Node_T</scope><name>data</name></member>
+      <member refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" prot="public" virt="non-virtual"><scope>Node_T</scope><name>next</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

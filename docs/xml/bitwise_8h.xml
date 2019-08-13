@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="bitwise_8h" kind="file" language="C++">
+    <compoundname>bitwise.h</compoundname>
+    <includedby refid="bitwise_8c" local="yes">process/bitwise.c</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>process/bitwise.c</label>
+        <link refid="bitwise_8c"/>
+      </node>
+      <node id="1">
+        <label>include/bitwise.h</label>
+        <link refid="bitwise_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="bitwise_8h_1a7664fc0292772653e3f8e1831a56f4a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int setbit</definition>
+        <argsstring>(int input, int bitwise)</argsstring>
+        <name>setbit</name>
+        <param>
+          <type>int</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bitwise</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is setting a specific bit to be 1... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Specific</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>location </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Set result </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/bitwise.h" line="4" column="1" bodyfile="process/bitwise.c" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="bitwise_8h_1abe18a20fb452d3de7f97b5596ed9f544" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int clearbit</definition>
+        <argsstring>(int input, int bitwise)</argsstring>
+        <name>clearbit</name>
+        <param>
+          <type>int</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bitwise</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is clearing a specific bit to be 0... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Specific</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>location </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Cleared result </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/bitwise.h" line="5" column="1" bodyfile="process/bitwise.c" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="bitwise_8h_1a3a1ebe8c360b980cf42cdf95f84522e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int inversebit</definition>
+        <argsstring>(int input, int bitwise)</argsstring>
+        <name>inversebit</name>
+        <param>
+          <type>int</type>
+          <declname>input</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bitwise</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used to inverse a specific bit... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Input</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Specific</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>location </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Revered result </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/bitwise.h" line="6" column="1" bodyfile="process/bitwise.c" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="bitwise_8h_1ae357857c3f5b1d24d1ccdf6f24c6c8bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void swap</definition>
+        <argsstring>(int data_a, int data_b)</argsstring>
+        <name>swap</name>
+        <param>
+          <type>int</type>
+          <declname>data_a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>data_b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used to swap integer data a and b without temporary variable... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Integer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data a </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Integer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data b </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/bitwise.h" line="7" column="1" bodyfile="process/bitwise.c" bodystart="38" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>INCLUDE_BITWISE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INCLUDE_BITWISE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bitwise_8h_1a7664fc0292772653e3f8e1831a56f4a5" kindref="member">setbit</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>input,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bitwise);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bitwise_8h_1abe18a20fb452d3de7f97b5596ed9f544" kindref="member">clearbit</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>input,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bitwise);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bitwise_8h_1a3a1ebe8c360b980cf42cdf95f84522e9" kindref="member">inversebit</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>input,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bitwise);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bitwise_8h_1ae357857c3f5b1d24d1ccdf6f24c6c8bd" kindref="member">swap</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>data_a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>data_b);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDE_BITWISE_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="include/bitwise.h"/>
+  </compounddef>
+</doxygen>

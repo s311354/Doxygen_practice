@@ -1,0 +1,542 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="linked__list_8c" kind="file" language="C++">
+    <compoundname>linked_list.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="linked__list_8h" local="yes">linked_list.h</includes>
+    <incdepgraph>
+      <node id="28">
+        <label>stdlib.h</label>
+      </node>
+      <node id="29">
+        <label>linked_list.h</label>
+        <link refid="linked__list_8h"/>
+      </node>
+      <node id="26">
+        <label>process/linked_list.c</label>
+        <link refid="linked__list_8c"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="linked__list_8c_1a5701413d759ae210acce0d0609784a5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref></type>
+        <definition>P_Node init_Node</definition>
+        <argsstring>(int data)</argsstring>
+        <name>init_Node</name>
+        <param>
+          <type>int</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is allocating the dynamic memory to the node... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Pass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer-to-lined-list. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="process/linked_list.c" line="10" column="1" bodyfile="process/linked_list.c" bodystart="10" bodyend="15"/>
+        <references refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" compoundref="linked__list_8h" startline="7">Node_T::data</references>
+        <references refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" compoundref="linked__list_8h" startline="8">Node_T::next</references>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="16" endline="90">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="linked__list_8c_1abd501d88c93d042f86b64f1813af62b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printList</definition>
+        <argsstring>(P_Node head)</argsstring>
+        <name>printList</name>
+        <param>
+          <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref></type>
+          <declname>head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is printing contents of linked list starting from the given node... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Starting</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="process/linked_list.c" line="21" column="1" bodyfile="process/linked_list.c" bodystart="21" bodyend="30"/>
+        <references refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" compoundref="linked__list_8h" startline="7">Node_T::data</references>
+        <references refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" compoundref="linked__list_8h" startline="8">Node_T::next</references>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="16" endline="90">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="linked__list_8c_1acaa7afa48eb97c81c2ca97eff5133d4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int printList_len</definition>
+        <argsstring>(P_Node head)</argsstring>
+        <name>printList_len</name>
+        <param>
+          <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref></type>
+          <declname>head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is printing length of linked list starting from the given node... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Starting</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="process/linked_list.c" line="36" column="1" bodyfile="process/linked_list.c" bodystart="36" bodyend="49"/>
+        <references refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" compoundref="linked__list_8h" startline="8">Node_T::next</references>
+        <referencedby refid="linked__list_8h_1a2b6268688fd88adebde5032fcce91171" compoundref="linked__list_8c" startline="158" endline="173">linked_list_get_Intersection_top</referencedby>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="16" endline="90">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="linked__list_8c_1a45c0c2ed3c68ce0aa806fea6910f2ea7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printList_middle</definition>
+        <argsstring>(P_Node head_ref, int total_node)</argsstring>
+        <name>printList_middle</name>
+        <param>
+          <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref></type>
+          <declname>head_ref</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>total_node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is printing middle of linked list... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Starting</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="process/linked_list.c" line="55" column="1" bodyfile="process/linked_list.c" bodystart="55" bodyend="74"/>
+        <references refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" compoundref="linked__list_8h" startline="8">Node_T::next</references>
+        <references refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" compoundref="linked__list_8h" startline="7">Node_T::data</references>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="16" endline="90">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="linked__list_8c_1adad6d2501ce74cee94e652408b2ff725" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linked_list_push_node</definition>
+        <argsstring>(P_Node *head_ref, int data)</argsstring>
+        <name>linked_list_push_node</name>
+        <param>
+          <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref> *</type>
+          <declname>head_ref</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is pushing a new node at the front... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Pass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer-to-struct. it can change the memory address stored at that memory location. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Assign</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to a new node. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="process/linked_list.c" line="81" column="1" bodyfile="process/linked_list.c" bodystart="81" bodyend="87"/>
+        <references refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" compoundref="linked__list_8h" startline="7">Node_T::data</references>
+        <references refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" compoundref="linked__list_8h" startline="8">Node_T::next</references>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="16" endline="90">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="linked__list_8c_1a67814184d4d93c72619d21d8dd0c4cf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linked_list_reverse</definition>
+        <argsstring>(P_Node *head_ref)</argsstring>
+        <name>linked_list_reverse</name>
+        <param>
+          <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref> *</type>
+          <declname>head_ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is reversing the linked list... Reverse function (Input: 1-&gt;2-&gt;3-&gt;4-&gt;NULL; Output: NULL&lt;-1&lt;-2&lt;-3&lt;-4)</para>
+<para><orderedlist>
+<listitem><para>Initialize three pointers: prev (NULL), curr (head), next (NULL).</para>
+</listitem><listitem><para>Iterate trough the linked list.</para>
+</listitem></orderedlist>
+<itemizedlist>
+<listitem><para>next = curr-&gt;next // store next node</para>
+</listitem><listitem><para>curr-&gt;next = prev // actual reserving happens</para>
+</listitem></itemizedlist>
+<orderedlist>
+<listitem><para>One step forward</para>
+</listitem></orderedlist>
+<itemizedlist>
+<listitem><para>prev = curr</para>
+</listitem><listitem><para>curr = next</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Pass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer-to-lined-list. it can change the memory address stored at that memory location. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="process/linked_list.c" line="104" column="1" bodyfile="process/linked_list.c" bodystart="104" bodyend="123"/>
+        <references refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" compoundref="linked__list_8h" startline="8">Node_T::next</references>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="16" endline="90">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="linked__list_8c_1a5ef0665f940196edd34c9f888a9f2766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linked_list_find_loop</definition>
+        <argsstring>(P_Node head_ref)</argsstring>
+        <name>linked_list_find_loop</name>
+        <param>
+          <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref></type>
+          <declname>head_ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is finding the loop in a the given linked list... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Starting</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="process/linked_list.c" line="129" column="1" bodyfile="process/linked_list.c" bodystart="129" bodyend="151"/>
+        <references refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" compoundref="linked__list_8h" startline="8">Node_T::next</references>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="16" endline="90">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="linked__list_8c_1a2b6268688fd88adebde5032fcce91171" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linked_list_get_Intersection_top</definition>
+        <argsstring>(P_Node head_ref1, P_Node head_ref2)</argsstring>
+        <name>linked_list_get_Intersection_top</name>
+        <param>
+          <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref></type>
+          <declname>head_ref1</declname>
+        </param>
+        <param>
+          <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref></type>
+          <declname>head_ref2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used to get the intersection point of two linked lists... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>First</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Second</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="process/linked_list.c" line="158" column="1" bodyfile="process/linked_list.c" bodystart="158" bodyend="173"/>
+        <references refid="linked__list_8c_1acaa7afa48eb97c81c2ca97eff5133d4c" compoundref="linked__list_8c" startline="36" endline="49">printList_len</references>
+        <references refid="linked__list_8c_1a63e1060a2209e519a8dd89c877334437" compoundref="linked__list_8c" startline="180" endline="205">linked_list_get_Intersection</references>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="16" endline="90">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="linked__list_8c_1a63e1060a2209e519a8dd89c877334437" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linked_list_get_Intersection</definition>
+        <argsstring>(int diff_len, P_Node head_ref1, P_Node head_ref2)</argsstring>
+        <name>linked_list_get_Intersection</name>
+        <param>
+          <type>int</type>
+          <declname>diff_len</declname>
+        </param>
+        <param>
+          <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref></type>
+          <declname>head_ref1</declname>
+        </param>
+        <param>
+          <type><ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref></type>
+          <declname>head_ref2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used to traverse two linked lists and fine the node of intersection... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>First</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Second</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>node. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The node of intersection </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="process/linked_list.c" line="180" column="1" bodyfile="process/linked_list.c" bodystart="180" bodyend="205"/>
+        <references refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" compoundref="linked__list_8h" startline="8">Node_T::next</references>
+        <references refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" compoundref="linked__list_8h" startline="7">Node_T::data</references>
+        <referencedby refid="linked__list_8h_1a2b6268688fd88adebde5032fcce91171" compoundref="linked__list_8c" startline="158" endline="173">linked_list_get_Intersection_top</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="linked__list_8h" kindref="compound">linked_list.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="linked__list_8h_1a5701413d759ae210acce0d0609784a5c" refkind="member"><highlight class="normal"><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/><ref refid="linked__list_8c_1a5701413d759ae210acce0d0609784a5c" kindref="member">init_Node</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" kindref="member">data</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>tmp<sp/>=<sp/>(<ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref>)<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_node___t" kindref="compound">Node</ref>));</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp-&gt;<ref refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" kindref="member">data</ref><sp/>=<sp/><ref refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tmp;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="linked__list_8h_1abd501d88c93d042f86b64f1813af62b5" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="linked__list_8c_1abd501d88c93d042f86b64f1813af62b5" kindref="member">printList</ref>(<ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>head)<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>temp<sp/>=<sp/>head;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Protect</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(temp<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%d<sp/><sp/>&quot;</highlight><highlight class="normal">,<sp/>temp-&gt;<ref refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>(<ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref>)<sp/>temp-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="linked__list_8h_1acaa7afa48eb97c81c2ca97eff5133d4c" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="linked__list_8c_1acaa7afa48eb97c81c2ca97eff5133d4c" kindref="member">printList_len</ref>(<ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>head)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>temp<sp/>=<sp/>head;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Protect</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(temp<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>len++;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>(<ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref>)<sp/>temp-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%d<sp/>\n&quot;</highlight><highlight class="normal">,<sp/>len);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>len;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="linked__list_8h_1a45c0c2ed3c68ce0aa806fea6910f2ea7" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="linked__list_8c_1a45c0c2ed3c68ce0aa806fea6910f2ea7" kindref="member">printList_middle</ref>(<ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>head_ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>total_node)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sum_node<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>p_fast_node<sp/>=<sp/>head_ref;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>p_slow_node<sp/>=<sp/>head_ref;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(head_ref<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(p_fast_node<sp/>!=<sp/>NULL<sp/>&amp;&amp;<sp/>p_fast_node-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref><sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_fast_node<sp/>=<sp/>(<ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref>)<sp/>p_fast_node-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_fast_node<sp/>=<sp/>(<ref refid="struct_node___t" kindref="compound">P_Node</ref>)<sp/>p_fast_node-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_slow_node<sp/>=<sp/>(<ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref>)<sp/>p_slow_node-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sum_node<sp/>+=<sp/>2;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;The<sp/>meddle<sp/>elements<sp/>is:<sp/>%d<sp/>\n&quot;</highlight><highlight class="normal">,<sp/>p_slow_node-&gt;<ref refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>total_node<sp/>=<sp/>sum_node;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Total<sp/>of<sp/>nodes:<sp/>%d<sp/>\n&quot;</highlight><highlight class="normal">,<sp/>total_node);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="linked__list_8h_1adad6d2501ce74cee94e652408b2ff725" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="linked__list_8c_1adad6d2501ce74cee94e652408b2ff725" kindref="member">linked_list_push_node</ref>(<ref refid="struct_node___t" kindref="compound">P_Node</ref>*<sp/>head_ref,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" kindref="member">data</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>init_node<sp/>=<sp/>(<ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref>)<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_node___t" kindref="compound">Node</ref>));</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>init_node-&gt;<ref refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" kindref="member">data</ref><sp/>=<sp/><ref refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>init_node-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref><sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_node___t" kindref="compound">Node</ref>*)<sp/>(*head_ref);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>(*head_ref)<sp/>=<sp/>init_node;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="linked__list_8h_1a67814184d4d93c72619d21d8dd0c4cf5" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="linked__list_8c_1a67814184d4d93c72619d21d8dd0c4cf5" kindref="member">linked_list_reverse</ref>(<ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>*<sp/>head_ref)<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>prev<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>curr<sp/>=<sp/>*head_ref;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/><ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(curr<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>store<sp/>next<sp/>node</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref><sp/>=<sp/>(<ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref>)<sp/>curr-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>reverse</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curr-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref><sp/>=<sp/>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct_node___t" kindref="compound">Node</ref><sp/>*)<sp/>prev;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>One<sp/>step<sp/>forward</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>prev<sp/>=<sp/>curr;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curr<sp/>=<sp/><ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>*head_ref<sp/>=<sp/>prev;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="linked__list_8h_1a5ef0665f940196edd34c9f888a9f2766" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="linked__list_8c_1a5ef0665f940196edd34c9f888a9f2766" kindref="member">linked_list_find_loop</ref>(<ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>head_ref)<sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>p_fast_node<sp/>=<sp/>head_ref;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>p_slow_node<sp/>=<sp/>head_ref;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>loop_cut<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(head_ref<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(p_fast_node<sp/>!=<sp/>NULL<sp/>&amp;&amp;<sp/>p_fast_node-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref><sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_fast_node<sp/>=<sp/>(<ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref>)<sp/>p_fast_node-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_fast_node<sp/>=<sp/>(<ref refid="struct_node___t" kindref="compound">P_Node</ref>)<sp/>p_fast_node-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p_slow_node<sp/>=<sp/>(<ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref>)<sp/>p_slow_node-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>loop_cut++;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>If<sp/>slow_p<sp/>and<sp/>fast_p<sp/>meet<sp/>at<sp/>some<sp/>point</highlight></codeline>
+<codeline lineno="143"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>then<sp/>there<sp/>is<sp/>a<sp/>loop<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(p_slow_node<sp/>==<sp/>p_fast_node)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Total<sp/>of<sp/>loop<sp/>node<sp/>is:<sp/>%d<sp/>\n&quot;</highlight><highlight class="normal">,<sp/>loop_cut);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="linked__list_8h_1a2b6268688fd88adebde5032fcce91171" refkind="member"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="linked__list_8c_1a2b6268688fd88adebde5032fcce91171" kindref="member">linked_list_get_Intersection_top</ref>(<ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>head_ref1,<sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>head_ref2)<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len1<sp/>=<sp/><ref refid="linked__list_8c_1acaa7afa48eb97c81c2ca97eff5133d4c" kindref="member">printList_len</ref>(head_ref1);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len2<sp/>=<sp/><ref refid="linked__list_8c_1acaa7afa48eb97c81c2ca97eff5133d4c" kindref="member">printList_len</ref>(head_ref2);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>diff_len,<sp/>result;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len1<sp/>&gt;<sp/>len2)<sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>diff_len<sp/>=<sp/>len1<sp/>-<sp/>len2;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/><ref refid="linked__list_8c_1a63e1060a2209e519a8dd89c877334437" kindref="member">linked_list_get_Intersection</ref>(diff_len,<sp/>head_ref1,<sp/>head_ref2);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>diff_len<sp/>=<sp/>len2<sp/>-<sp/>len1;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/><ref refid="linked__list_8c_1a63e1060a2209e519a8dd89c877334437" kindref="member">linked_list_get_Intersection</ref>(diff_len,<sp/>head_ref2,<sp/>head_ref1);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;The<sp/>node<sp/>of<sp/>intersection<sp/>is:<sp/>%d<sp/>\n&quot;</highlight><highlight class="normal">,<sp/>result);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="linked__list_8h_1a63e1060a2209e519a8dd89c877334437" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="linked__list_8c_1a63e1060a2209e519a8dd89c877334437" kindref="member">linked_list_get_Intersection</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>diff_len,<sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>head_ref1,</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>head_ref2)<sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>current_1<sp/>=<sp/>head_ref1;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>current_2<sp/>=<sp/>head_ref2;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Align<sp/>two<sp/>linked<sp/>lists</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>diff_len;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(current_1<sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_1<sp/>=<sp/>(<ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref>)<sp/>current_1-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Traverse<sp/>both<sp/>the<sp/>lists<sp/>and<sp/>fine<sp/>the<sp/>intersection<sp/>point</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(current_1<sp/>!=<sp/>NULL<sp/>&amp;&amp;<sp/>current_2<sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(current_1<sp/>==<sp/>current_2)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>current_1-&gt;<ref refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_1<sp/>=<sp/>(<ref refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kindref="member">P_Node</ref>)<sp/>current_1-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_2<sp/>=<sp/>(<ref refid="struct_node___t" kindref="compound">P_Node</ref>)<sp/>current_2-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="process/linked_list.c"/>
+  </compounddef>
+</doxygen>

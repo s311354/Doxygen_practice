@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="recurse_8c" kind="file" language="C++">
+    <compoundname>recurse.c</compoundname>
+    <includes local="yes">stdio.h</includes>
+    <includes local="yes">stdlib.h</includes>
+    <incdepgraph>
+      <node id="31">
+        <label>process/recurse.c</label>
+        <link refid="recurse_8c"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>stdlib.h</label>
+      </node>
+      <node id="32">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="recurse_8c_1a4cbdc9b08ac7faba5fa958c4043486b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int factorial</definition>
+        <argsstring>(int N)</argsstring>
+        <name>factorial</name>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is calculating N factorial ... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>times of factorial </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result</para>
+</simplesect>
+Description: N! = 1 * 2 * 3 * 4 * 5 .... * N </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="process/recurse.c" line="11" column="1" bodyfile="process/recurse.c" bodystart="11" bodyend="17"/>
+        <references refid="recurse_8c_1a4cbdc9b08ac7faba5fa958c4043486b0" compoundref="recurse_8c" startline="11" endline="17">factorial</references>
+        <referencedby refid="recurse_8h_1afa83652e1c8d18525b35949c802583c7" compoundref="recurse_8c" startline="11" endline="17">factorial</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="recurse_8c_1adfff5415eac26d7f0ca4ed72a24f4e7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int arithmetic</definition>
+        <argsstring>(int factor)</argsstring>
+        <name>arithmetic</name>
+        <param>
+          <type>int</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is calculating arithmetic series ... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>last terms </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result</para>
+</simplesect>
+Description: 1 + 2 + 3 + 4 + 5 .... </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="process/recurse.c" line="26" column="1" bodyfile="process/recurse.c" bodystart="26" bodyend="32"/>
+        <references refid="recurse_8c_1adfff5415eac26d7f0ca4ed72a24f4e7a" compoundref="recurse_8c" startline="26" endline="32">arithmetic</references>
+        <referencedby refid="recurse_8h_1adfff5415eac26d7f0ca4ed72a24f4e7a" compoundref="recurse_8c" startline="26" endline="32">arithmetic</referencedby>
+        <referencedby refid="recurse_8h_1a7d65a64eebc4df75d801933c29b7a507" compoundref="recurse_8c" startline="41" endline="49">different_arithmetic</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="recurse_8c_1a7d65a64eebc4df75d801933c29b7a507" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int different_arithmetic</definition>
+        <argsstring>(int factor)</argsstring>
+        <name>different_arithmetic</name>
+        <param>
+          <type>int</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is calculating the different arithmetic series... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>last terms </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result</para>
+</simplesect>
+Description: 1 - 2 + 3 - 4 + 5 - 6 .... </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="process/recurse.c" line="41" column="1" bodyfile="process/recurse.c" bodystart="41" bodyend="49"/>
+        <references refid="recurse_8c_1adfff5415eac26d7f0ca4ed72a24f4e7a" compoundref="recurse_8c" startline="26" endline="32">arithmetic</references>
+      </memberdef>
+      <memberdef kind="function" id="recurse_8c_1a95fb4919b9ac89b9e30a7a7e4c008d3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int fibonacci</definition>
+        <argsstring>(int sum)</argsstring>
+        <name>fibonacci</name>
+        <param>
+          <type>int</type>
+          <declname>sum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is calculating the Fibonacci number... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>last terms </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result</para>
+</simplesect>
+Description: 0, 1, 1 ,2, 3, 5 ..... </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="process/recurse.c" line="59" column="1" bodyfile="process/recurse.c" bodystart="59" bodyend="68"/>
+        <references refid="recurse_8c_1a95fb4919b9ac89b9e30a7a7e4c008d3e" compoundref="recurse_8c" startline="59" endline="68">fibonacci</references>
+        <referencedby refid="recurse_8h_1a95fb4919b9ac89b9e30a7a7e4c008d3e" compoundref="recurse_8c" startline="59" endline="68">fibonacci</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="recurse_8c_1a99d3d23844bba5ae985d25ca2d74b784" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int euclidean_division</definition>
+        <argsstring>(int a, int b)</argsstring>
+        <name>euclidean_division</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is calculating the GCD of two integers by Euclidean algorithm... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>integer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>integer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>GCD</para>
+</simplesect>
+Idea:<orderedlist>
+<listitem><para>GCD(A,0) = A and GCD(B,0) = B</para>
+</listitem><listitem><para>If A = B⋅Q + R and B≠0 then GCD(A,B) = GCD(B,R) where Q is an integer, R is an integer between 0 and B-1 </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="process/recurse.c" line="80" column="1" bodyfile="process/recurse.c" bodystart="80" bodyend="85"/>
+        <references refid="recurse_8c_1a99d3d23844bba5ae985d25ca2d74b784" compoundref="recurse_8c" startline="80" endline="85">euclidean_division</references>
+        <referencedby refid="recurse_8h_1a99d3d23844bba5ae985d25ca2d74b784" compoundref="recurse_8c" startline="80" endline="85">euclidean_division</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;stdio.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stdlib.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="recurse_8h_1afa83652e1c8d18525b35949c802583c7" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="recurse_8c_1a4cbdc9b08ac7faba5fa958c4043486b0" kindref="member">factorial</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>N)<sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(N<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>decreasing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(N<sp/>*<sp/><ref refid="recurse_8c_1a4cbdc9b08ac7faba5fa958c4043486b0" kindref="member">factorial</ref>(N<sp/>-<sp/>1));</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="recurse_8h_1adfff5415eac26d7f0ca4ed72a24f4e7a" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="recurse_8c_1adfff5415eac26d7f0ca4ed72a24f4e7a" kindref="member">arithmetic</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>factor)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(factor<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>decreasing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(factor<sp/>+<sp/><ref refid="recurse_8c_1adfff5415eac26d7f0ca4ed72a24f4e7a" kindref="member">arithmetic</ref>(factor<sp/>-<sp/>1));</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="recurse_8h_1a7d65a64eebc4df75d801933c29b7a507" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="recurse_8c_1a7d65a64eebc4df75d801933c29b7a507" kindref="member">different_arithmetic</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>factor)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(factor<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>determine<sp/>the<sp/>term<sp/>position</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>factor<sp/>=<sp/>(factor<sp/>%<sp/>2<sp/>==<sp/>0)<sp/>?<sp/>-factor<sp/>:<sp/>factor;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(factor<sp/>+<sp/><ref refid="recurse_8c_1adfff5415eac26d7f0ca4ed72a24f4e7a" kindref="member">arithmetic</ref>(factor<sp/>-<sp/>1));</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="recurse_8h_1a95fb4919b9ac89b9e30a7a7e4c008d3e" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="recurse_8c_1a95fb4919b9ac89b9e30a7a7e4c008d3e" kindref="member">fibonacci</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sum)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sum<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sum<sp/>==<sp/>2<sp/>|<sp/>sum<sp/>==<sp/>3)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>decreasing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="recurse_8c_1a95fb4919b9ac89b9e30a7a7e4c008d3e" kindref="member">fibonacci</ref>(sum<sp/>-<sp/>1)<sp/>+<sp/><ref refid="recurse_8c_1a95fb4919b9ac89b9e30a7a7e4c008d3e" kindref="member">fibonacci</ref>(sum<sp/>-<sp/>2));</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="recurse_8h_1a99d3d23844bba5ae985d25ca2d74b784" refkind="member"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="recurse_8c_1a99d3d23844bba5ae985d25ca2d74b784" kindref="member">euclidean_division</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a<sp/>%<sp/>b<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="recurse_8c_1a99d3d23844bba5ae985d25ca2d74b784" kindref="member">euclidean_division</ref>(b,<sp/>a<sp/>%<sp/>b);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="process/recurse.c"/>
+  </compounddef>
+</doxygen>

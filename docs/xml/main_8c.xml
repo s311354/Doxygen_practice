@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="main_8c" kind="file" language="C++">
+    <compoundname>main.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="definition_8h" local="yes">definition.h</includes>
+    <includes refid="struct__process_8h" local="yes">struct_process.h</includes>
+    <includes refid="linked__list_8h" local="yes">linked_list.h</includes>
+    <incdepgraph>
+      <node id="19">
+        <label>definition.h</label>
+        <link refid="definition_8h"/>
+      </node>
+      <node id="18">
+        <label>stdlib.h</label>
+      </node>
+      <node id="21">
+        <label>linked_list.h</label>
+        <link refid="linked__list_8h"/>
+      </node>
+      <node id="16">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>struct_process.h</label>
+        <link refid="struct__process_8h"/>
+      </node>
+      <node id="17">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.c" line="16" column="1" bodyfile="main.c" bodystart="16" bodyend="90"/>
+        <references refid="struct__process_8c_1ac8f153ab8088724127bccf2fda7196a6" compoundref="struct__process_8c" startline="9" endline="14">struct_init</references>
+        <references refid="struct_s_t_r_u_c_t_t_a_g___t_1a443890f81996bc5364684d246523f7f0" compoundref="struct__process_8h" startline="8">STRUCTTAG_T::memberB</references>
+        <references refid="linked__list_8c_1a5701413d759ae210acce0d0609784a5c" compoundref="linked__list_8c" startline="10" endline="15">init_Node</references>
+        <references refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" compoundref="linked__list_8h" startline="8">Node_T::next</references>
+        <references refid="linked__list_8c_1abd501d88c93d042f86b64f1813af62b5" compoundref="linked__list_8c" startline="21" endline="30">printList</references>
+        <references refid="linked__list_8c_1acaa7afa48eb97c81c2ca97eff5133d4c" compoundref="linked__list_8c" startline="36" endline="49">printList_len</references>
+        <references refid="linked__list_8c_1a67814184d4d93c72619d21d8dd0c4cf5" compoundref="linked__list_8c" startline="104" endline="123">linked_list_reverse</references>
+        <references refid="linked__list_8c_1adad6d2501ce74cee94e652408b2ff725" compoundref="linked__list_8c" startline="81" endline="87">linked_list_push_node</references>
+        <references refid="linked__list_8c_1a45c0c2ed3c68ce0aa806fea6910f2ea7" compoundref="linked__list_8c" startline="55" endline="74">printList_middle</references>
+        <references refid="linked__list_8c_1a2b6268688fd88adebde5032fcce91171" compoundref="linked__list_8c" startline="158" endline="173">linked_list_get_Intersection_top</references>
+        <references refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" compoundref="linked__list_8h" startline="7">Node_T::data</references>
+        <references refid="linked__list_8c_1a5ef0665f940196edd34c9f888a9f2766" compoundref="linked__list_8c" startline="129" endline="151">linked_list_find_loop</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="definition_8h" kindref="compound">definition.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="struct__process_8h" kindref="compound">struct_process.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="linked__list_8h" kindref="compound">linked_list.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Basic<sp/>linked<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>We<sp/>have<sp/>the<sp/>linked<sp/>list<sp/>ready.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">+---+---+<sp/><sp/><sp/><sp/><sp/>+---+---+<sp/><sp/><sp/><sp/><sp/>+----+------+</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">|<sp/>1<sp/>|<sp/>o-----&gt;|<sp/>2<sp/>|<sp/>o-----&gt;<sp/>|<sp/>3<sp/>|<sp/>NULL<sp/>|</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">+---+---+<sp/><sp/><sp/><sp/><sp/>+---+---+<sp/><sp/><sp/><sp/><sp/>+----+------+</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****<sp/>Structure<sp/><sp/>****/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Access<sp/>Pointer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_s_t_r_u_c_t_t_a_g___t" kindref="compound">STRUCTTAG</ref><sp/>tag;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_s_t_r_u_c_t_t_a_g___t" kindref="compound">PSTRUCTTAG</ref><sp/>p_tag;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>total_node<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>p_tag<sp/>=<sp/>&amp;tag;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>initial<sp/>the<sp/>structure<sp/>(example)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct__process_8c_1ac8f153ab8088724127bccf2fda7196a6" kindref="member">struct_init</ref>(p_tag,<sp/>1,<sp/>2);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;member<sp/>B<sp/>at<sp/>structure<sp/>=<sp/>%d,<sp/>at<sp/>printer<sp/>structure<sp/>=<sp/>%d\n&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tag.<ref refid="struct_s_t_r_u_c_t_t_a_g___t_1a443890f81996bc5364684d246523f7f0" kindref="member">memberB</ref>,<sp/>p_tag-&gt;<ref refid="struct_s_t_r_u_c_t_t_a_g___t_1a443890f81996bc5364684d246523f7f0" kindref="member">memberB</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****<sp/>Two<sp/>linked<sp/>Lists<sp/><sp/>****/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>First<sp/>linked<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>head<sp/>=<sp/><ref refid="linked__list_8c_1a5701413d759ae210acce0d0609784a5c" kindref="member">init_Node</ref>(1);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>second<sp/>=<sp/><ref refid="linked__list_8c_1a5701413d759ae210acce0d0609784a5c" kindref="member">init_Node</ref>(2);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>third<sp/>=<sp/><ref refid="linked__list_8c_1a5701413d759ae210acce0d0609784a5c" kindref="member">init_Node</ref>(3);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>four<sp/>=<sp/><ref refid="linked__list_8c_1a5701413d759ae210acce0d0609784a5c" kindref="member">init_Node</ref>(4);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Second<sp/>linked<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>head_branch<sp/>=<sp/><ref refid="linked__list_8c_1a5701413d759ae210acce0d0609784a5c" kindref="member">init_Node</ref>(2);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>second_branch<sp/>=<sp/><ref refid="linked__list_8c_1a5701413d759ae210acce0d0609784a5c" kindref="member">init_Node</ref>(2);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>third_branch<sp/>=<sp/><ref refid="linked__list_8c_1a5701413d759ae210acce0d0609784a5c" kindref="member">init_Node</ref>(2);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_node___t" kindref="compound">P_Node</ref><sp/>four_branch<sp/>=<sp/><ref refid="linked__list_8c_1a5701413d759ae210acce0d0609784a5c" kindref="member">init_Node</ref>(4);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Link<sp/>the<sp/>structure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>head-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref><sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_node___t" kindref="compound">Node</ref><sp/>*)<sp/>second;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>second-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref><sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_node___t" kindref="compound">Node</ref><sp/>*)<sp/>third;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>third-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Link<sp/>the<sp/>branch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>head_branch-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref><sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_node___t" kindref="compound">Node</ref><sp/>*)<sp/>second_branch;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>second_branch-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref><sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_node___t" kindref="compound">Node</ref><sp/>*)<sp/>third_branch;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>third_branch-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref><sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_node___t" kindref="compound">Node</ref><sp/>*)<sp/>four_branch;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>four_branch-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref><sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_node___t" kindref="compound">Node</ref><sp/>*)<sp/>third;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Print<sp/>Linked<sp/>list<sp/>\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="linked__list_8c_1abd501d88c93d042f86b64f1813af62b5" kindref="member">printList</ref>(head);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Print<sp/>the<sp/>length<sp/>of<sp/>list<sp/>\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="linked__list_8c_1acaa7afa48eb97c81c2ca97eff5133d4c" kindref="member">printList_len</ref>(head);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reverse<sp/>the<sp/>linked<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="linked__list_8c_1a67814184d4d93c72619d21d8dd0c4cf5" kindref="member">linked_list_reverse</ref>(&amp;head);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Print<sp/>reversed<sp/>Linked<sp/>list<sp/>\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="linked__list_8c_1abd501d88c93d042f86b64f1813af62b5" kindref="member">printList</ref>(head);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Push<sp/>a<sp/>new<sp/>node</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="linked__list_8c_1adad6d2501ce74cee94e652408b2ff725" kindref="member">linked_list_push_node</ref>(&amp;head,<sp/>3);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="linked__list_8c_1adad6d2501ce74cee94e652408b2ff725" kindref="member">linked_list_push_node</ref>(&amp;head,<sp/>5);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Print<sp/>Linked<sp/>list<sp/>\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="linked__list_8c_1abd501d88c93d042f86b64f1813af62b5" kindref="member">printList</ref>(head);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Print<sp/>middle<sp/>node<sp/>\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="linked__list_8c_1a45c0c2ed3c68ce0aa806fea6910f2ea7" kindref="member">printList_middle</ref>(head,<sp/>total_node);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Print<sp/>the<sp/>intersection<sp/>point<sp/>of<sp/>two<sp/>linked<sp/>list:<sp/>\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="linked__list_8c_1a2b6268688fd88adebde5032fcce91171" kindref="member">linked_list_get_Intersection_top</ref>(head,<sp/>head_branch);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>loop<sp/>in<sp/>linked<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>third-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref><sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_node___t" kindref="compound">Node</ref><sp/>*)<sp/>four;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>four-&gt;<ref refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" kindref="member">data</ref><sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>four-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref><sp/>=<sp/>head-&gt;<ref refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="linked__list_8c_1a5ef0665f940196edd34c9f888a9f2766" kindref="member">linked_list_find_loop</ref>(head);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="main.c"/>
+  </compounddef>
+</doxygen>

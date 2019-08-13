@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.15">
+  <compound refid="struct_du___node___t" kind="struct"><name>Du_Node_T</name>
+    <member refid="struct_du___node___t_1a4fd8bcb55e30dfc9c86102ac13b0132e" kind="variable"><name>data</name></member>
+    <member refid="struct_du___node___t_1a5fbd38daec8cff3a22beba5b9b282a4c" kind="variable"><name>prev</name></member>
+    <member refid="struct_du___node___t_1a63e64fc1e62e071703cf05298b29d0ed" kind="variable"><name>next</name></member>
+  </compound>
+  <compound refid="struct_node___t" kind="struct"><name>Node_T</name>
+    <member refid="struct_node___t_1a0c5ea3488b3bbcfdc8a8cf143afe76f7" kind="variable"><name>data</name></member>
+    <member refid="struct_node___t_1a2e6ec350ad2aaf45244d52d0834ea8da" kind="variable"><name>next</name></member>
+  </compound>
+  <compound refid="struct_s_t_r_u_c_t_t_a_g___t" kind="struct"><name>STRUCTTAG_T</name>
+    <member refid="struct_s_t_r_u_c_t_t_a_g___t_1a7ef6e95bbf5a7ad4cc80f2d600ca28a6" kind="variable"><name>memberA</name></member>
+    <member refid="struct_s_t_r_u_c_t_t_a_g___t_1a443890f81996bc5364684d246523f7f0" kind="variable"><name>memberB</name></member>
+  </compound>
+  <compound refid="bitwise_8h" kind="file"><name>bitwise.h</name>
+    <member refid="bitwise_8h_1a7664fc0292772653e3f8e1831a56f4a5" kind="function"><name>setbit</name></member>
+    <member refid="bitwise_8h_1abe18a20fb452d3de7f97b5596ed9f544" kind="function"><name>clearbit</name></member>
+    <member refid="bitwise_8h_1a3a1ebe8c360b980cf42cdf95f84522e9" kind="function"><name>inversebit</name></member>
+    <member refid="bitwise_8h_1ae357857c3f5b1d24d1ccdf6f24c6c8bd" kind="function"><name>swap</name></member>
+  </compound>
+  <compound refid="definition_8h" kind="file"><name>definition.h</name>
+    <member refid="definition_8h_1a62ac4aa20e989946e59f2cc9aea76353" kind="typedef"><name>String2Int</name></member>
+  </compound>
+  <compound refid="linked__list_8h" kind="file"><name>linked_list.h</name>
+    <member refid="linked__list_8h_1ac582a3377d7f1e676f9fb60d80b3a33d" kind="typedef"><name>Node</name></member>
+    <member refid="linked__list_8h_1ab8d11df86cc50ba1d1baf4b206f5b298" kind="typedef"><name>P_Node</name></member>
+    <member refid="linked__list_8h_1a740b9a8414da06f4145136999679481b" kind="typedef"><name>Du_Node</name></member>
+    <member refid="linked__list_8h_1af66f295d3af268b06df2a387479879c6" kind="typedef"><name>P_Du_Node</name></member>
+    <member refid="linked__list_8h_1a5701413d759ae210acce0d0609784a5c" kind="function"><name>init_Node</name></member>
+    <member refid="linked__list_8h_1acaa7afa48eb97c81c2ca97eff5133d4c" kind="function"><name>printList_len</name></member>
+    <member refid="linked__list_8h_1a2b6268688fd88adebde5032fcce91171" kind="function"><name>linked_list_get_Intersection_top</name></member>
+    <member refid="linked__list_8h_1a63e1060a2209e519a8dd89c877334437" kind="function"><name>linked_list_get_Intersection</name></member>
+    <member refid="linked__list_8h_1abd501d88c93d042f86b64f1813af62b5" kind="function"><name>printList</name></member>
+    <member refid="linked__list_8h_1a45c0c2ed3c68ce0aa806fea6910f2ea7" kind="function"><name>printList_middle</name></member>
+    <member refid="linked__list_8h_1adad6d2501ce74cee94e652408b2ff725" kind="function"><name>linked_list_push_node</name></member>
+    <member refid="linked__list_8h_1a67814184d4d93c72619d21d8dd0c4cf5" kind="function"><name>linked_list_reverse</name></member>
+    <member refid="linked__list_8h_1a5ef0665f940196edd34c9f888a9f2766" kind="function"><name>linked_list_find_loop</name></member>
+  </compound>
+  <compound refid="recurse_8h" kind="file"><name>recurse.h</name>
+    <member refid="recurse_8h_1afa83652e1c8d18525b35949c802583c7" kind="function"><name>factorial</name></member>
+    <member refid="recurse_8h_1adfff5415eac26d7f0ca4ed72a24f4e7a" kind="function"><name>arithmetic</name></member>
+    <member refid="recurse_8h_1a7d65a64eebc4df75d801933c29b7a507" kind="function"><name>different_arithmetic</name></member>
+    <member refid="recurse_8h_1a95fb4919b9ac89b9e30a7a7e4c008d3e" kind="function"><name>fibonacci</name></member>
+    <member refid="recurse_8h_1a99d3d23844bba5ae985d25ca2d74b784" kind="function"><name>euclidean_division</name></member>
+  </compound>
+  <compound refid="struct__process_8h" kind="file"><name>struct_process.h</name>
+    <member refid="struct__process_8h_1a6df7071512e61617cb4c578aea5f8add" kind="typedef"><name>STRUCTTAG</name></member>
+    <member refid="struct__process_8h_1a49fae5263c994ae54ec11bfd536fa901" kind="typedef"><name>PSTRUCTTAG</name></member>
+    <member refid="struct__process_8h_1ac8f153ab8088724127bccf2fda7196a6" kind="function"><name>struct_init</name></member>
+    <member refid="struct__process_8h_1aca98c950e221c40ecaefc93f1254ab52" kind="function"><name>struct_free</name></member>
+  </compound>
+  <compound refid="main_8c" kind="file"><name>main.c</name>
+    <member refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="bitwise_8c" kind="file"><name>bitwise.c</name>
+    <member refid="bitwise_8c_1a7664fc0292772653e3f8e1831a56f4a5" kind="function"><name>setbit</name></member>
+    <member refid="bitwise_8c_1abe18a20fb452d3de7f97b5596ed9f544" kind="function"><name>clearbit</name></member>
+    <member refid="bitwise_8c_1a3a1ebe8c360b980cf42cdf95f84522e9" kind="function"><name>inversebit</name></member>
+    <member refid="bitwise_8c_1ae357857c3f5b1d24d1ccdf6f24c6c8bd" kind="function"><name>swap</name></member>
+  </compound>
+  <compound refid="linked__list_8c" kind="file"><name>linked_list.c</name>
+    <member refid="linked__list_8c_1a5701413d759ae210acce0d0609784a5c" kind="function"><name>init_Node</name></member>
+    <member refid="linked__list_8c_1abd501d88c93d042f86b64f1813af62b5" kind="function"><name>printList</name></member>
+    <member refid="linked__list_8c_1acaa7afa48eb97c81c2ca97eff5133d4c" kind="function"><name>printList_len</name></member>
+    <member refid="linked__list_8c_1a45c0c2ed3c68ce0aa806fea6910f2ea7" kind="function"><name>printList_middle</name></member>
+    <member refid="linked__list_8c_1adad6d2501ce74cee94e652408b2ff725" kind="function"><name>linked_list_push_node</name></member>
+    <member refid="linked__list_8c_1a67814184d4d93c72619d21d8dd0c4cf5" kind="function"><name>linked_list_reverse</name></member>
+    <member refid="linked__list_8c_1a5ef0665f940196edd34c9f888a9f2766" kind="function"><name>linked_list_find_loop</name></member>
+    <member refid="linked__list_8c_1a2b6268688fd88adebde5032fcce91171" kind="function"><name>linked_list_get_Intersection_top</name></member>
+    <member refid="linked__list_8c_1a63e1060a2209e519a8dd89c877334437" kind="function"><name>linked_list_get_Intersection</name></member>
+  </compound>
+  <compound refid="recurse_8c" kind="file"><name>recurse.c</name>
+    <member refid="recurse_8c_1a4cbdc9b08ac7faba5fa958c4043486b0" kind="function"><name>factorial</name></member>
+    <member refid="recurse_8c_1adfff5415eac26d7f0ca4ed72a24f4e7a" kind="function"><name>arithmetic</name></member>
+    <member refid="recurse_8c_1a7d65a64eebc4df75d801933c29b7a507" kind="function"><name>different_arithmetic</name></member>
+    <member refid="recurse_8c_1a95fb4919b9ac89b9e30a7a7e4c008d3e" kind="function"><name>fibonacci</name></member>
+    <member refid="recurse_8c_1a99d3d23844bba5ae985d25ca2d74b784" kind="function"><name>euclidean_division</name></member>
+  </compound>
+  <compound refid="struct__process_8c" kind="file"><name>struct_process.c</name>
+    <member refid="struct__process_8c_1ac8f153ab8088724127bccf2fda7196a6" kind="function"><name>struct_init</name></member>
+    <member refid="struct__process_8c_1aca98c950e221c40ecaefc93f1254ab52" kind="function"><name>struct_free</name></member>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="md__r_e_a_d_m_e" kind="page"><name>md_README</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_1dc745a558826d0d5751d86c3529451b" kind="dir"><name>process</name>
+  </compound>
+</doxygenindex>

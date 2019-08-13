@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>include</compoundname>
+    <innerfile refid="bitwise_8h">bitwise.h</innerfile>
+    <innerfile refid="definition_8h">definition.h</innerfile>
+    <innerfile refid="linked__list_8h">linked_list.h</innerfile>
+    <innerfile refid="recurse_8h">recurse.h</innerfile>
+    <innerfile refid="struct__process_8h">struct_process.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/"/>
+  </compounddef>
+</doxygen>

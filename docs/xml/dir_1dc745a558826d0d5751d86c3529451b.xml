@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="dir_1dc745a558826d0d5751d86c3529451b" kind="dir">
+    <compoundname>process</compoundname>
+    <innerfile refid="bitwise_8c">bitwise.c</innerfile>
+    <innerfile refid="linked__list_8c">linked_list.c</innerfile>
+    <innerfile refid="recurse_8c">recurse.c</innerfile>
+    <innerfile refid="struct__process_8c">struct_process.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="process/"/>
+  </compounddef>
+</doxygen>

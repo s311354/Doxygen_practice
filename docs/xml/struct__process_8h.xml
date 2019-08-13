@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="struct__process_8h" kind="file" language="C++">
+    <compoundname>struct_process.h</compoundname>
+    <includedby refid="main_8c" local="yes">main.c</includedby>
+    <includedby refid="struct__process_8c" local="yes">process/struct_process.c</includedby>
+    <invincdepgraph>
+      <node id="14">
+        <label>main.c</label>
+        <link refid="main_8c"/>
+      </node>
+      <node id="13">
+        <label>include/struct_process.h</label>
+        <link refid="struct__process_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>process/struct_process.c</label>
+        <link refid="struct__process_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_s_t_r_u_c_t_t_a_g___t" prot="public">STRUCTTAG_T</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="struct__process_8h_1a6df7071512e61617cb4c578aea5f8add" prot="public" static="no">
+        <type>struct <ref refid="struct_s_t_r_u_c_t_t_a_g___t" kindref="compound">STRUCTTAG_T</ref></type>
+        <definition>typedef struct STRUCTTAG_T  STRUCTTAG</definition>
+        <argsstring></argsstring>
+        <name>STRUCTTAG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dummy structure </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/struct_process.h" line="9" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="struct__process_8h_1a49fae5263c994ae54ec11bfd536fa901" prot="public" static="no">
+        <type>struct <ref refid="struct_s_t_r_u_c_t_t_a_g___t" kindref="compound">STRUCTTAG_T</ref> *</type>
+        <definition>typedef struct STRUCTTAG_T * PSTRUCTTAG</definition>
+        <argsstring></argsstring>
+        <name>PSTRUCTTAG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/struct_process.h" line="9" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="struct__process_8h_1ac8f153ab8088724127bccf2fda7196a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void struct_init</definition>
+        <argsstring>(PSTRUCTTAG p_tag, int memberA, int memberB)</argsstring>
+        <name>struct_init</name>
+        <param>
+          <type><ref refid="struct__process_8h_1a49fae5263c994ae54ec11bfd536fa901" kindref="member">PSTRUCTTAG</ref></type>
+          <declname>p_tag</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>memberA</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>memberB</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is assigning initial value in the structure... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Pass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer-to-structure </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Assign</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to member A </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Assign</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data to member B </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/struct_process.h" line="11" column="1" bodyfile="process/struct_process.c" bodystart="9" bodyend="14"/>
+        <references refid="struct_s_t_r_u_c_t_t_a_g___t_1a7ef6e95bbf5a7ad4cc80f2d600ca28a6" compoundref="struct__process_8h" startline="7">STRUCTTAG_T::memberA</references>
+        <references refid="struct_s_t_r_u_c_t_t_a_g___t_1a443890f81996bc5364684d246523f7f0" compoundref="struct__process_8h" startline="8">STRUCTTAG_T::memberB</references>
+        <referencedby refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8c" startline="16" endline="90">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct__process_8h_1aca98c950e221c40ecaefc93f1254ab52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void struct_free</definition>
+        <argsstring>(PSTRUCTTAG p_tag)</argsstring>
+        <name>struct_free</name>
+        <param>
+          <type><ref refid="struct__process_8h_1a49fae5263c994ae54ec11bfd536fa901" kindref="member">PSTRUCTTAG</ref></type>
+          <declname>p_tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is freeing memory... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Pass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer-to-structure. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>none </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/struct_process.h" line="13" column="1" bodyfile="process/struct_process.c" bodystart="20" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>STRUCT_PROCESS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STRUCT_PROCESS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="struct_s_t_r_u_c_t_t_a_g___t" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_s_t_r_u_c_t_t_a_g___t" kindref="compound">STRUCTTAG_T</ref><sp/>{</highlight></codeline>
+<codeline lineno="7" refid="struct_s_t_r_u_c_t_t_a_g___t_1a7ef6e95bbf5a7ad4cc80f2d600ca28a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_s_t_r_u_c_t_t_a_g___t_1a7ef6e95bbf5a7ad4cc80f2d600ca28a6" kindref="member">memberA</ref>;<sp/></highlight></codeline>
+<codeline lineno="8" refid="struct_s_t_r_u_c_t_t_a_g___t_1a443890f81996bc5364684d246523f7f0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_s_t_r_u_c_t_t_a_g___t_1a443890f81996bc5364684d246523f7f0" kindref="member">memberB</ref>;<sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}<sp/><ref refid="struct__process_8h_1a6df7071512e61617cb4c578aea5f8add" kindref="member">STRUCTTAG</ref>,<sp/>*<ref refid="struct__process_8h_1a49fae5263c994ae54ec11bfd536fa901" kindref="member">PSTRUCTTAG</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct__process_8h_1ac8f153ab8088724127bccf2fda7196a6" kindref="member">struct_init</ref>(<ref refid="struct_s_t_r_u_c_t_t_a_g___t" kindref="compound">PSTRUCTTAG</ref><sp/>p_tag,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>memberA,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>memberB);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct__process_8h_1aca98c950e221c40ecaefc93f1254ab52" kindref="member">struct_free</ref>(<ref refid="struct_s_t_r_u_c_t_t_a_g___t" kindref="compound">PSTRUCTTAG</ref><sp/>p_tag);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>STRUCT_PROCESS_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="include/struct_process.h"/>
+  </compounddef>
+</doxygen>

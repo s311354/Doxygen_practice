@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="recurse_8h" kind="file" language="C++">
+    <compoundname>recurse.h</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="recurse_8h_1afa83652e1c8d18525b35949c802583c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int factorial</definition>
+        <argsstring>(int factor)</argsstring>
+        <name>factorial</name>
+        <param>
+          <type>int</type>
+          <declname>factor</declname>
+          <defname>N</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is calculating N factorial ... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>times of factorial </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result</para>
+</simplesect>
+Description: N! = 1 * 2 * 3 * 4 * 5 .... * N </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/recurse.h" line="4" column="1" bodyfile="process/recurse.c" bodystart="11" bodyend="17"/>
+        <references refid="recurse_8c_1a4cbdc9b08ac7faba5fa958c4043486b0" compoundref="recurse_8c" startline="11" endline="17">factorial</references>
+        <referencedby refid="recurse_8h_1afa83652e1c8d18525b35949c802583c7" compoundref="recurse_8c" startline="11" endline="17">factorial</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="recurse_8h_1adfff5415eac26d7f0ca4ed72a24f4e7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int arithmetic</definition>
+        <argsstring>(int factor)</argsstring>
+        <name>arithmetic</name>
+        <param>
+          <type>int</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is calculating arithmetic series ... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>last terms </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result</para>
+</simplesect>
+Description: 1 + 2 + 3 + 4 + 5 .... </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/recurse.h" line="5" column="1" bodyfile="process/recurse.c" bodystart="26" bodyend="32"/>
+        <references refid="recurse_8c_1adfff5415eac26d7f0ca4ed72a24f4e7a" compoundref="recurse_8c" startline="26" endline="32">arithmetic</references>
+        <referencedby refid="recurse_8h_1adfff5415eac26d7f0ca4ed72a24f4e7a" compoundref="recurse_8c" startline="26" endline="32">arithmetic</referencedby>
+        <referencedby refid="recurse_8h_1a7d65a64eebc4df75d801933c29b7a507" compoundref="recurse_8c" startline="41" endline="49">different_arithmetic</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="recurse_8h_1a7d65a64eebc4df75d801933c29b7a507" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int different_arithmetic</definition>
+        <argsstring>(int factor)</argsstring>
+        <name>different_arithmetic</name>
+        <param>
+          <type>int</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is calculating the different arithmetic series... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>last terms </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result</para>
+</simplesect>
+Description: 1 - 2 + 3 - 4 + 5 - 6 .... </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/recurse.h" line="6" column="1" bodyfile="process/recurse.c" bodystart="41" bodyend="49"/>
+        <references refid="recurse_8c_1adfff5415eac26d7f0ca4ed72a24f4e7a" compoundref="recurse_8c" startline="26" endline="32">arithmetic</references>
+      </memberdef>
+      <memberdef kind="function" id="recurse_8h_1a95fb4919b9ac89b9e30a7a7e4c008d3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int fibonacci</definition>
+        <argsstring>(int sum)</argsstring>
+        <name>fibonacci</name>
+        <param>
+          <type>int</type>
+          <declname>sum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is calculating the Fibonacci number... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>The</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>last terms </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Result</para>
+</simplesect>
+Description: 0, 1, 1 ,2, 3, 5 ..... </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/recurse.h" line="7" column="1" bodyfile="process/recurse.c" bodystart="59" bodyend="68"/>
+        <references refid="recurse_8c_1a95fb4919b9ac89b9e30a7a7e4c008d3e" compoundref="recurse_8c" startline="59" endline="68">fibonacci</references>
+        <referencedby refid="recurse_8h_1a95fb4919b9ac89b9e30a7a7e4c008d3e" compoundref="recurse_8c" startline="59" endline="68">fibonacci</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="recurse_8h_1a99d3d23844bba5ae985d25ca2d74b784" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int euclidean_division</definition>
+        <argsstring>(int a, int b)</argsstring>
+        <name>euclidean_division</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is calculating the GCD of two integers by Euclidean algorithm... <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>integer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>1 </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>integer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>2 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>GCD</para>
+</simplesect>
+Idea:<orderedlist>
+<listitem><para>GCD(A,0) = A and GCD(B,0) = B</para>
+</listitem><listitem><para>If A = B⋅Q + R and B≠0 then GCD(A,B) = GCD(B,R) where Q is an integer, R is an integer between 0 and B-1 </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/recurse.h" line="8" column="1" bodyfile="process/recurse.c" bodystart="80" bodyend="85"/>
+        <references refid="recurse_8c_1a99d3d23844bba5ae985d25ca2d74b784" compoundref="recurse_8c" startline="80" endline="85">euclidean_division</references>
+        <referencedby refid="recurse_8h_1a99d3d23844bba5ae985d25ca2d74b784" compoundref="recurse_8c" startline="80" endline="85">euclidean_division</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>INCLUDE_RECURSE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INCLUDE_RECURSE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="recurse_8h_1afa83652e1c8d18525b35949c802583c7" kindref="member">factorial</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>factor);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="recurse_8h_1adfff5415eac26d7f0ca4ed72a24f4e7a" kindref="member">arithmetic</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>factor);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="recurse_8h_1a7d65a64eebc4df75d801933c29b7a507" kindref="member">different_arithmetic</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>factor);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="recurse_8h_1a95fb4919b9ac89b9e30a7a7e4c008d3e" kindref="member">fibonacci</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sum);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="recurse_8h_1a99d3d23844bba5ae985d25ca2d74b784" kindref="member">euclidean_division</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INCLUDE_RECURSE_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="include/recurse.h"/>
+  </compounddef>
+</doxygen>

@@ -5,26 +5,14 @@
 #include "struct_process.h"
 #include "linked_list.h"
 
-//Linked list
-/* 	data has been assigned to data part of third
- block (block pointed by third). And next pointer
- of the third block is made NULL to indicate
- that the linked list is terminated here.
+// Basic linked list
+/* We have the linked list ready.
 
- We have the linked list ready.
++---+---+     +---+---+     +----+------+
+| 1 | o----->| 2 | o-----> | 3 | NULL |
++---+---+     +---+---+     +----+------+
 
- head
- |
- |
- +---+---+     +---+---+     +----+------+
- | 1 | o----->| 2 | o-----> | 3 | NULL |
- +---+---+     +---+---+     +----+------+
-
-
- Note that only head is sufficient to represent
- the whole list. We can traverse the complete
- list by following next pointers. */
-
+ */
 int main() {
 
 	/**** Structure  ****/
@@ -39,16 +27,30 @@ int main() {
 	printf("member B at structure = %d, at printer structure = %d\n",
 			tag.memberB, p_tag->memberB);
 
-	/**** linked List  ****/
+	/**** Two linked Lists  ****/
+	// First linked list
 	P_Node head = init_Node(1);
 	P_Node second = init_Node(2);
 	P_Node third = init_Node(3);
 	P_Node four = init_Node(4);
 
+	// Second linked list
+	P_Node head_branch = init_Node(2);
+	P_Node second_branch = init_Node(2);
+	P_Node third_branch = init_Node(2);
+	P_Node four_branch = init_Node(4);
+
+
 	// Link the structure
 	head->next = (struct Node *) second;
 	second->next = (struct Node *) third;
 	third->next = NULL;
+
+	// Link the branch
+	head_branch->next = (struct Node *) second_branch;
+	second_branch->next = (struct Node *) third_branch;
+	third_branch->next = (struct Node *) four_branch;
+	four_branch->next = (struct Node *) third;
 
 	printf("Print Linked list \n");
 	printList(head);
@@ -71,6 +73,11 @@ int main() {
 
 	printf("Print middle node \n");
 	printList_middle(head, total_node);
+
+	printf("Print the intersection point of two linked list: \n");
+	linked_list_get_Intersection_top(head, head_branch);
+
+
 
 	// Create a loop in linked list
 	third->next = (struct Node *) four;

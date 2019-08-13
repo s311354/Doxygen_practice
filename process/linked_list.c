@@ -33,7 +33,7 @@ void printList(P_Node head) {
  *    @param Starting node.
  *    @return none
  */
-void printList_len(P_Node head) {
+int printList_len(P_Node head) {
 	P_Node temp = head;
 	int len = 0;
 
@@ -44,6 +44,8 @@ void printList_len(P_Node head) {
 	}
 
 	printf("%d \n", len);
+
+	return len;
 }
 
 /** This function is printing middle of linked list...
@@ -146,4 +148,58 @@ void linked_list_find_loop(P_Node head_ref) {
 	}
 
 	printf("Total of loop node is: %d \n", loop_cut);
+}
+
+/** This function is used to get the intersection point of two linked lists...
+ *    @param First node.
+ *    @param Second node.
+ *    @return none
+ */
+void linked_list_get_Intersection_top(P_Node head_ref1, P_Node head_ref2) {
+	int len1 = printList_len(head_ref1);
+	int len2 = printList_len(head_ref2);
+	int diff_len, result;
+
+	if (len1 > len2) {
+		diff_len = len1 - len2;
+		result = linked_list_get_Intersection(diff_len, head_ref1, head_ref2);
+	} else {
+		diff_len = len2 - len1;
+		result = linked_list_get_Intersection(diff_len, head_ref2, head_ref1);
+	}
+
+	printf("The node of intersection is: %d \n", result);
+
+}
+
+/** This function is used to traverse two linked lists and fine the node of intersection...
+ *    @param First node.
+ *    @param Second node.
+ *    @return The node of intersection
+ */
+int linked_list_get_Intersection(int diff_len, P_Node head_ref1,
+		P_Node head_ref2) {
+
+	int i;
+	P_Node current_1 = head_ref1;
+	P_Node current_2 = head_ref2;
+
+	// Align two linked lists
+	for (i = 0; i < diff_len; ++i) {
+		if (current_1 == NULL) {
+			return -1;
+		}
+		current_1 = (P_Node) current_1->next;
+	}
+
+	// Traverse both the lists and fine the intersection point
+	while (current_1 != NULL && current_2 != NULL) {
+		if (current_1 == current_2)
+			return current_1->data;
+
+		current_1 = (P_Node) current_1->next;
+		current_2 = (P_Node) current_2->next;
+	}
+
+	return -1;
 }

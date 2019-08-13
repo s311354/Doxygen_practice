@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.15">
+  <compounddef id="struct_du___node___t" kind="struct" language="C++" prot="public">
+    <compoundname>Du_Node_T</compoundname>
+    <includes refid="linked__list_8h" local="no">linked_list.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_du___node___t_1a4fd8bcb55e30dfc9c86102ac13b0132e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Du_Node_T::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/linked_list.h" line="14" column="1" bodyfile="include/linked_list.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_du___node___t_1a5fbd38daec8cff3a22beba5b9b282a4c" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="linked__list_8h_1ac582a3377d7f1e676f9fb60d80b3a33d" kindref="member">Node</ref> *</type>
+        <definition>struct Node* Du_Node_T::prev</definition>
+        <argsstring></argsstring>
+        <name>prev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/linked_list.h" line="15" column="1" bodyfile="include/linked_list.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_du___node___t_1a63e64fc1e62e071703cf05298b29d0ed" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="linked__list_8h_1ac582a3377d7f1e676f9fb60d80b3a33d" kindref="member">Node</ref> *</type>
+        <definition>struct Node* Du_Node_T::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/linked_list.h" line="16" column="1" bodyfile="include/linked_list.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Dummy Doubly Linked list </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Node_T</label>
+        <link refid="struct_node___t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Du_Node_T</label>
+        <link refid="struct_du___node___t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/linked_list.h" line="13" column="1" bodyfile="include/linked_list.h" bodystart="13" bodyend="17"/>
+    <listofallmembers>
+      <member refid="struct_du___node___t_1a4fd8bcb55e30dfc9c86102ac13b0132e" prot="public" virt="non-virtual"><scope>Du_Node_T</scope><name>data</name></member>
+      <member refid="struct_du___node___t_1a63e64fc1e62e071703cf05298b29d0ed" prot="public" virt="non-virtual"><scope>Du_Node_T</scope><name>next</name></member>
+      <member refid="struct_du___node___t_1a5fbd38daec8cff3a22beba5b9b282a4c" prot="public" virt="non-virtual"><scope>Du_Node_T</scope><name>prev</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

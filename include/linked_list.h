@@ -17,8 +17,10 @@ typedef struct Du_Node_T {
 } Du_Node, *P_Du_Node;
 
 P_Node init_Node (int data);
+int printList_len(P_Node head);
+void linked_list_get_Intersection_top(P_Node head_ref1, P_Node head_ref2);
+int linked_list_get_Intersection(int diff_len, P_Node head_ref1, P_Node head_ref2);
 void printList(P_Node head);
-void printList_len(P_Node head);
 void printList_middle(P_Node head_ref, int total_node);
 void linked_list_push_node(P_Node* head_ref, int data);
 void linked_list_reverse(P_Node* head_ref);
